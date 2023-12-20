@@ -1,0 +1,117 @@
+body {
+  background-color: #010a3d;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../image/mua2.jpg");
+  object-fit: fill;
+  background-position: center;
+  background-size: cover;
+}
+.rain-drop {
+  position: fixed;
+  top: -100px;
+  width: 1px;
+  height: 100px;
+  background-image: linear-gradient(to bottom, transparent, white);
+}
+.rain-drop:nth-child(2) {
+  left: 10%;
+  animation: rainFall 0.8s linear 2s infinite;
+}
+.rain-drop:nth-child(3) {
+  left: 15%;
+  animation: rainFall 0.7s linear 1s infinite;
+}
+.rain-drop:nth-child(4) {
+  left: 35%;
+  animation: rainFall 0.7s linear 0.1s infinite;
+}
+.rain-drop:nth-child(5) {
+  left: 65%;
+  animation: rainFall 0.7s linear 0.3s infinite;
+}
+.rain-drop:nth-child(6) {
+  left: 80%;
+  animation: rainFall 0.8s linear 0.9s infinite;
+}
+.rain-drop:nth-child(7) {
+  left: 90%;
+  animation: rainFall 0.6s linear 1.1s infinite;
+}
+.rain-drop:nth-child(8) {
+  left: 82%;
+  animation: rainFall 0.7s linear 0.4s infinite;
+}
+.rain-drop:nth-child(9) {
+  left: 95%;
+  animation: rainFall 0.7s linear 1s infinite;
+}
+.rain-drop:nth-child(10) {
+  left: 53%;
+  animation: rainFall 0.8s linear 0.5s infinite;
+}
+.rain-drop:nth-child(11) {
+  left: 45%;
+  animation: rainFall 0.8s linear 0.5s infinite;
+}
+.rain-drop:nth-child(12) {
+  left: 5%;
+  animation: rainFall 0.8s linear 0.2s infinite;
+}
+.rain-drop:nth-child(13) {
+  left: 33%;
+  animation: rainFall 0.8s linear 0.65s infinite;
+}
+.rain-drop:nth-child(14) {
+  left: 66%;
+  animation: rainFall 0.7s linear 0.35s infinite;
+}
+.rain-drop:nth-child(15) {
+  left: 53%;
+  animation: rainFall 0.8s linear 0.2s infinite;
+}
+@keyframes rainFall {
+  0% {
+    top: -100px;
+  }
+  50% {
+    top: 100vh;
+  }
+  100% {
+    top: 100vh;
+  }
+}
+
+.lightning {
+  position: absolute;
+  right: -50%;
+  background: white; /* màn chớp của mình chọn màu trắng */
+  animation: lightning 4s linear infinite; /* đặt tên hiệu ứng là lightning luôn, và cho chạy 4s loop */
+}
+.lightning img {
+  width: 75%;
+  transform: scaleX(-1) rotate(45deg); /* do cái ảnh nó chưa có độ nghiêng như mình muốn nên mình flip và nghiêng lại cho đẹp */
+}
+@keyframes lightning {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0; /* từ 0->30% thì nền vẫn như bình thường */
+  }
+  32% {
+    opacity: 1; /* trong từ 30-32% thì hiện lên chớp, thời gian nhanh thì nó sẽ lóe lên nhanh */
+  }
+  37% {
+    opacity: 0; /* từ 32-35% thì chớp tắt đi, mình để tắt đi lâu hơn 1 tí tạo hiệu ứng dư âm */
+  }
+}
