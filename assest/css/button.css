@@ -13,13 +13,15 @@ body {
 }
 
 .custom-button {
-  width: 150px; /* Chiều rộng cố định của nút */
-  margin: 5px; /* Optional: Add margin between buttons */
-  padding: 10px;
+  width: 150px;
+  margin: 5px;
   text-align: center;
-  background-color: #3498db;
   color: #fff;
-  border: none;
   cursor: pointer;
-  box-sizing: border-box; /* Ngăn padding và border làm thay đổi chiều rộng */
+  box-sizing: border-box;
+  background-color: #f34079;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
 }

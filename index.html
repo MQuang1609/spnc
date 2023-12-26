@@ -6,6 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assest/css/button.css" />
     <link rel="stylesheet" href="./assest/css/index.css" />
+    <link rel="stylesheet" href="./assest/css/huongdan.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <div id="app">
@@ -28,6 +33,15 @@
             <a href="./assest/pages/dong.html">
               <button class="custom-button">GIÁNG SINH</button></a
             >
+            <form action="">
+              <button id="showBtn" class="custom-button" type="button">
+                Hướng dẫn
+              </button>
+              <div id="image-container">
+                <span id="closeBtn"><i class="fas fa-times"></i></span>
+                <img src="./assest/image/huongdan1.jpg" alt="Hình ảnh mô tả" />
+              </div>
+            </form>
           </div>
           <div id="game"></div>
           <div id="code-container">
@@ -89,5 +103,6 @@
     <script defer src="./assest/js/setup-control.js"></script>
     <script defer src="./assest/js/index.js"></script>
     <script defer src="./assest/js/button.js"></script>
+    <script src="./assest/js/huongdan.js"></script>
   </body>
 </html>

@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="../css/index.css" />
 
     <link rel="stylesheet" href="../css/tet.css" />
+    <link rel="stylesheet" href="../css/huongdan.css" />
     <script defer src="../js/bonMua/tet.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <div id="app">
@@ -27,6 +32,15 @@
             <a href="./dong.html">
               <button class="custom-button">GIÁNG SINH</button></a
             >
+            <form action="">
+              <button id="showBtn" class="custom-button" type="button">
+                Hướng dẫn
+              </button>
+              <div id="image-container">
+                <span id="closeBtn"><i class="fas fa-times"></i></span>
+                <img src="../image/huongdan1.jpg" alt="Hình ảnh mô tả" />
+              </div>
+            </form>
           </div>
           <div id="game"></div>
           <div id="code-container">
@@ -92,6 +106,7 @@
     <script defer src="../js/setup-game.js"></script>
     <script defer src="../js/setup-control.js"></script>
     <script defer src="../js/index.js"></script>
+    <script defer src="../js/huongdan.js"></script>
     <script type="text/javascript" src="../js/bonMua/tet.js"></script>
   </body>
 </html>

@@ -7,27 +7,33 @@
     <link rel="stylesheet" href="../css/button.css" />
     <link rel="stylesheet" href="../css/index.css" />
 
+    <link rel="stylesheet" href="../css/tet.css" />
+    <link rel="stylesheet" href="../css/huongdan.css" />
     <link rel="stylesheet" href="../css/mua.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="layer-1">
-      <div class="rain-drop"></div>
-      <div class="rain-drop"></div>
-      <div class="rain-drop"></div>
-      <div class="rain-drop"></div>
-      <div class="rain-drop"></div>
-      <div class="rain-drop"></div>
-      <div class="rain-drop"></div>
-      <div class="rain-drop"></div>
-      <div class="rain-drop"></div>
-      <div class="rain-drop"></div>
-      <div class="rain-drop"></div>
-      <div class="rain-drop"></div>
-      <div class="rain-drop"></div>
-      <div class="rain-drop"></div>
-      <div class="rain-drop"></div>
-    </div>
     <div id="app">
+      <div class="layer-1">
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+      </div>
       <div id="all">
         <div id="top">
           <h1 id="title">Mô phỏng thuật toán tìm kiếm nhị phân</h1>
@@ -43,6 +49,15 @@
             <a href="./dong.html">
               <button class="custom-button">GIÁNG SINH</button></a
             >
+            <form action="">
+              <button id="showBtn" class="custom-button" type="button">
+                Hướng dẫn
+              </button>
+              <div id="image-container">
+                <span id="closeBtn"><i class="fas fa-times"></i></span>
+                <img src="../image/huongdan1.jpg" alt="Hình ảnh mô tả" />
+              </div>
+            </form>
           </div>
           <div id="game"></div>
           <div id="code-container">
@@ -92,7 +107,7 @@
           </div>
           <button>Start</button>
           <audio controls autoplay loop>
-            <source src="../audio/mua.mp3" type="audio/mp3" />
+            <source src="../audio/tet.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -108,5 +123,6 @@
     <script defer src="../js/setup-game.js"></script>
     <script defer src="../js/setup-control.js"></script>
     <script defer src="../js/index.js"></script>
+    <script defer src="../js/huongdan.js"></script>
   </body>
 </html>

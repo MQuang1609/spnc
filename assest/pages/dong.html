@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/snow.css" />
     <link rel="stylesheet" href="../css/button.css" />
+    <link rel="stylesheet" href="../css/huongdan.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <script defer src="./assest/js/bonMua/dong.js"></script>
   </head>
   <body>
@@ -39,6 +44,15 @@
             <a href="./dong.html">
               <button class="custom-button">GIÁNG SINH</button></a
             >
+            <form action="">
+              <button id="showBtn" class="custom-button" type="button">
+                Hướng dẫn
+              </button>
+              <div id="image-container">
+                <span id="closeBtn"><i class="fas fa-times"></i></span>
+                <img src="../image/huongdan1.jpg" alt="Hình ảnh mô tả" />
+              </div>
+            </form>
           </div>
 
           <div id="game"></div>
@@ -89,7 +103,7 @@
           </div>
           <button>Start</button>
           <audio controls autoplay loop>
-            <source src="../audio/giangsinh.mp4" type="audio/mp3" />
+            <source src="../audio/giangsinh.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -105,5 +119,6 @@
     <script defer src="../js/setup-game.js"></script>
     <script defer src="../js/setup-control.js"></script>
     <script defer src="../js/index.js"></script>
+    <script src="../js/huongdan.js"></script>
   </body>
 </html>
