@@ -3,77 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hiển Thị Hình Ảnh</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <!-- Sử dụng phiên bản mới nhất của Font Awesome -->
-    <style>
-      body {
-        font-family: "Arial", sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-
-      #image-container {
-        display: none;
-        position: relative;
-      }
-
-      #closeBtn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 20px;
-        color: #555;
-        cursor: pointer;
-      }
-
-      #showBtn {
-        background-color: #007bff;
-        color: #fff;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        border: none;
-        border-radius: 5px;
-      }
-    </style>
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <form>
-      <button id="showBtn" type="button">Hiển Thị Hình Ảnh</button>
-      <div id="image-container">
-        <span id="closeBtn"><i class="fas fa-times"></i></span>
-        <img src="./assest/image/huongdan.jpg" alt="Hình ảnh mô tả" />
-      </div>
-    </form>
+    <button id="openPdfButton">Open PDF</button>
+    <button id="closePdfButton" style="display: none">Close PDF</button>
+    <div id="pdfContainer" style="display: none">
+      <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+    </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var showBtn = document.getElementById("showBtn");
-        var imageContainer = document.getElementById("image-container");
-        var closeBtn = document.getElementById("closeBtn");
-        var isImageVisible = false;
-
-        showBtn.addEventListener("click", function () {
-          imageContainer.style.display = "block";
-          isImageVisible = true;
-        });
-
-        closeBtn.addEventListener("click", function () {
-          if (isImageVisible) {
-            imageContainer.style.display = "none";
-            isImageVisible = false;
-          }
-        });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 const setupGame = () => {
   const config = {
     type: Phaser.AUTO,
-    width: 700,
+    width: 800,
     height: 500,
     backgroundColor: "#000",
     parent: "game",

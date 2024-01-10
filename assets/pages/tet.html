@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" href="../css/tet.css" />
     <link rel="stylesheet" href="../css/huongdan.css" />
-    <link rel="stylesheet" href="../css/mua.css" />
+    <link rel="stylesheet" href="../css/pdf.css" />
+    <script defer src="../js/bonMua/tet.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -17,23 +18,6 @@
   </head>
   <body>
     <div id="app">
-      <div class="layer-1">
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-        <div class="rain-drop"></div>
-      </div>
       <div id="all">
         <div id="top">
           <h1 id="title">Mô phỏng thuật toán tìm kiếm nhị phân</h1>
@@ -49,6 +33,14 @@
             <a href="./dong.html">
               <button class="custom-button">GIÁNG SINH</button></a
             >
+            <button class="custom-button" id="openPdfButton">TÀI LIỆU</button>
+            <button
+              class="custom-button"
+              id="closePdfButton"
+              style="display: none"
+            >
+              TẮT TÀI LIỆU
+            </button>
             <form action="">
               <button id="showBtn" class="custom-button" type="button">
                 Hướng dẫn
@@ -92,18 +84,21 @@
             <p>}</p>
           </div>
         </div>
+        <div id="pdfContainer" style="display: none">
+          <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+        </div>
         <div id="control">
           <div id="sub-control">
             <p class="text-control">Điền các số</p>
             <input
               id="control-input"
               placeholder="Numbers, splited by commas, min 1, max 100"
-              value="12, 24, 31, 88, 54, 47, 66, 92, 99, 100, 1, 5, 33, 40, 50, 70, 20"
+              value="12, 24, 31, 88, 54, 47, 66, 92, 99, 100, 1, 5, 33, 40, 50, 70, 20, 16, 55, 21, 6, 17, 23"
             />
           </div>
           <div id="sub-control-2">
             <p class="text-control">Số cần tìm</p>
-            <input id="control-input-2" placeholder="Value" value="1" />
+            <input id="control-input-2" placeholder="Value" value="99" />
           </div>
           <button>Start</button>
           <audio controls autoplay loop>
@@ -124,5 +119,7 @@
     <script defer src="../js/setup-control.js"></script>
     <script defer src="../js/index.js"></script>
     <script defer src="../js/huongdan.js"></script>
+    <script type="text/javascript" src="../js/bonMua/tet.js"></script>
+    <script src="../js/pdf.js"></script>
   </body>
 </html>

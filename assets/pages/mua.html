@@ -4,36 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/snow.css" />
     <link rel="stylesheet" href="../css/button.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+
+    <link rel="stylesheet" href="../css/tet.css" />
     <link rel="stylesheet" href="../css/huongdan.css" />
+    <link rel="stylesheet" href="../css/mua.css" />
+    <link rel="stylesheet" href="../css/pdf.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <script defer src="./assest/js/bonMua/dong.js"></script>
   </head>
   <body>
-    <div class="snowflakes" aria-hidden="true">
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-    </div>
     <div id="app">
+      <div class="layer-1">
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+        <div class="rain-drop"></div>
+      </div>
       <div id="all">
         <div id="top">
           <h1 id="title">Mô phỏng thuật toán tìm kiếm nhị phân</h1>
         </div>
+
         <div id="container">
           <div class="button-container">
             <a href="../../index.html"
@@ -44,6 +50,14 @@
             <a href="./dong.html">
               <button class="custom-button">GIÁNG SINH</button></a
             >
+            <button class="custom-button" id="openPdfButton">TÀI LIỆU</button>
+            <button
+              class="custom-button"
+              id="closePdfButton"
+              style="display: none"
+            >
+              TẮT TÀI LIỆU
+            </button>
             <form action="">
               <button id="showBtn" class="custom-button" type="button">
                 Hướng dẫn
@@ -54,7 +68,6 @@
               </div>
             </form>
           </div>
-
           <div id="game"></div>
           <div id="code-container">
             <p>function binarySearch(sortedArray, value) {</p>
@@ -88,22 +101,25 @@
             <p>}</p>
           </div>
         </div>
+        <div id="pdfContainer" style="display: none">
+          <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+        </div>
         <div id="control">
           <div id="sub-control">
             <p class="text-control">Điền các số</p>
             <input
               id="control-input"
               placeholder="Numbers, splited by commas, min 1, max 100"
-              value="12, 24, 31, 88, 54, 47, 66, 92, 99, 100, 1, 5, 33, 40, 50, 70, 20"
+              value="12, 24, 31, 88, 54, 47, 66, 92, 99, 100, 1, 5, 33, 40, 50, 70, 20, 16, 55, 21, 6, 17, 23"
             />
           </div>
           <div id="sub-control-2">
             <p class="text-control">Số cần tìm</p>
-            <input id="control-input-2" placeholder="Value" value="1" />
+            <input id="control-input-2" placeholder="Value" value="99" />
           </div>
           <button>Start</button>
           <audio controls autoplay loop>
-            <source src="../audio/giangsinh.mp3" type="audio/mp3" />
+            <source src="../audio/mua.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -114,11 +130,12 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.60.0/phaser.min.js"
     ></script>
 
-    <script defer src="../js/main.js"></script>
+    <script defer src="../js/button.js"></script>
     <script defer src="../js/game-scene.js"></script>
     <script defer src="../js/setup-game.js"></script>
     <script defer src="../js/setup-control.js"></script>
     <script defer src="../js/index.js"></script>
-    <script src="../js/huongdan.js"></script>
+    <script defer src="../js/huongdan.js"></script>
+    <script src="../js/bonMua/mua.js"></script>
   </body>
 </html>

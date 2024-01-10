@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assest/css/button.css" />
-    <link rel="stylesheet" href="./assest/css/index.css" />
-    <link rel="stylesheet" href="./assest/css/huongdan.css" />
+    <link rel="stylesheet" href="./assets/css/button.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/huongdan.css" />
+    <link rel="stylesheet" href="./assets/css/pdf.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -24,22 +25,30 @@
             <a href="index.html"
               ><button class="custom-button">TRANG CHỦ</button></a
             >
-            <a href="./assest/pages/tet.html">
+            <a href="./assets/pages/tet.html">
               <button class="custom-button">TẾT</button></a
             >
-            <a href="./assest/pages/mua.html">
+            <a href="./assets/pages/mua.html">
               <button class="custom-button">MƯA</button></a
             >
-            <a href="./assest/pages/dong.html">
+            <a href="./assets/pages/dong.html">
               <button class="custom-button">GIÁNG SINH</button></a
             >
+            <button class="custom-button" id="openPdfButton">TÀI LIỆU</button>
+            <button
+              class="custom-button"
+              id="closePdfButton"
+              style="display: none"
+            >
+              TẮT TÀI LIỆU
+            </button>
             <form action="">
               <button id="showBtn" class="custom-button" type="button">
                 Hướng dẫn
               </button>
               <div id="image-container">
                 <span id="closeBtn"><i class="fas fa-times"></i></span>
-                <img src="./assest/image/huongdan1.jpg" alt="Hình ảnh mô tả" />
+                <img src="./assets/image/huongdan1.jpg" alt="Hình ảnh mô tả" />
               </div>
             </form>
           </div>
@@ -76,18 +85,21 @@
             <p>}</p>
           </div>
         </div>
+        <div id="pdfContainer" style="display: none">
+          <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+        </div>
         <div id="control">
           <div id="sub-control">
             <p class="text-control">Điền các số</p>
             <input
               id="control-input"
               placeholder="Numbers, splited by commas, min 1, max 100"
-              value="12, 24, 31, 88, 54, 47, 66, 92, 99, 100, 1, 5, 33, 40, 50, 70, 20"
+              value="12, 24, 31, 88, 54, 47, 66, 92, 99, 100, 1, 5, 33, 40, 50, 70, 20, 16, 55, 21, 6, 17, 23"
             />
           </div>
           <div id="sub-control-2">
             <p class="text-control">Số cần tìm</p>
-            <input id="control-input-2" placeholder="Value" value="1" />
+            <input id="control-input-2" placeholder="Value" value="99" />
           </div>
           <button>Start</button>
         </div>
@@ -98,11 +110,12 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.60.0/phaser.min.js"
     ></script>
 
-    <script defer src="./assest/js/game-scene.js"></script>
-    <script defer src="./assest/js/setup-game.js"></script>
-    <script defer src="./assest/js/setup-control.js"></script>
-    <script defer src="./assest/js/index.js"></script>
-    <script defer src="./assest/js/button.js"></script>
-    <script src="./assest/js/huongdan.js"></script>
+    <script defer src="./assets/js/game-scene.js"></script>
+    <script defer src="./assets/js/setup-game.js"></script>
+    <script defer src="./assets/js/setup-control.js"></script>
+    <script defer src="./assets/js/index.js"></script>
+    <script defer src="./assets/js/button.js"></script>
+    <script src="./assets/js/huongdan.js"></script>
+    <script src="./assets/js/pdf.js"></script>
   </body>
 </html>

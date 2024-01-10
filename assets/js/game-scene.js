@@ -70,7 +70,7 @@ class GameScene extends Phaser.Scene {
   draw() {
     this.valueText = this.add.text(50, 50, `Giá trị đang tìm: ${this.value}`, {
       color: "#fff",
-      fontSize: 12,
+      fontSize: 18,
     });
 
     this.values.map((value, index) => {
@@ -88,13 +88,13 @@ class GameScene extends Phaser.Scene {
         50 + index * 30 + 12,
         400 - value * 3 - 10,
         `${value}`,
-        { color: "#fff", fontSize: 12 }
+        { color: "#fff", fontSize: 18 }
       );
       valueText.setOrigin(0.5, 0.5);
 
       const indexText = this.add.text(50 + index * 30 + 12, 410, `${index}`, {
         color: "#fff",
-        fontSize: 12,
+        fontSize: 18,
       });
       indexText.setOrigin(0.5, 0.5);
 
@@ -126,7 +126,7 @@ class GameScene extends Phaser.Scene {
     valueText.setColor(color);
     const barNoteText = this.add.text(x + 13, y + 40, text, {
       color,
-      fontSize: 12,
+      fontSize: 18,
     });
     barNoteText.setOrigin(0.5, 0.5);
     if (bar.barNoteText) {
@@ -170,7 +170,7 @@ class GameScene extends Phaser.Scene {
         `Vị trí đầu mảng: ${start}`,
         {
           color: "#fff",
-          fontSize: 12,
+          fontSize: 18,
         }
       );
       this.middleIndexText?.destroy(true);
@@ -180,13 +180,13 @@ class GameScene extends Phaser.Scene {
         `Vị trí giữa mảng: ${middle}`,
         {
           color: "#fff",
-          fontSize: 12,
+          fontSize: 18,
         }
       );
       this.endIndexText?.destroy(true);
       this.endIndexText = this.add.text(50, 150, `Vị trí cuối mảng: ${end}`, {
         color: "#fff",
-        fontSize: 12,
+        fontSize: 18,
       });
 
       this.drawBarNote(middle, "Giá trị giữa mảng", "#00ff00");
@@ -197,7 +197,7 @@ class GameScene extends Phaser.Scene {
         `Giá trị giữa mảng: ${this.values[middle]}`,
         {
           color: "#fff",
-          fontSize: 12,
+          fontSize: 18,
         }
       );
       this.middleStatusText?.destroy(true);
@@ -213,7 +213,7 @@ class GameScene extends Phaser.Scene {
         }`,
         {
           color: "#fff",
-          fontSize: 12,
+          fontSize: 18,
         }
       );
 
@@ -252,7 +252,7 @@ class GameScene extends Phaser.Scene {
         `Không tìm thấy giá trị cần tìm!`,
         {
           color: "#fff",
-          fontSize: 14,
+          fontSize: 18,
         }
       );
     } else {
@@ -262,7 +262,7 @@ class GameScene extends Phaser.Scene {
         `Giá trị được tìm thấy ở vị trí: ${index}`,
         {
           color: "#fff",
-          fontSize: 14,
+          fontSize: 18,
         }
       );
     }
