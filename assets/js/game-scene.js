@@ -147,7 +147,7 @@ class GameScene extends Phaser.Scene {
 
   async highlight(code) {
     this.game.events.emit("highlight", code);
-    await this.delay(3000);
+    await this.delay(2500);
   }
 
   async findIndex() {
@@ -235,7 +235,7 @@ class GameScene extends Phaser.Scene {
         }
       }
 
-      await this.delay(2700);
+      await this.delay(2000);
     }
 
     this.clearBarNote();
